@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3Js</title>
+    <style>
+      .right-label {
+        font-size: 12px;
+        color: grey;
+        text-align: right;
+      }
+      #mainBar0 {
+        background-image: linear-gradient(blue, white);
+      }
+    </style>
+  </head>
+  <body onload="onload()">
+    <button type="button" onclick="randomize()">Randomize</button>
+    <button type="button" onclick="addData()">Add Data</button>
+    <button type="button" onclick="reduceData()">Reduce Data</button>
+    <div style="margin-top:20px;">
+      <svg id="thebar"></svg>
+    </div>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
